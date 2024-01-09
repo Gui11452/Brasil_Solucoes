@@ -8,9 +8,7 @@
     const [rodapeA1, rodapeA2, rodapeA3, rodapeA4] = rodapeValores
 
     const cabecalhoOcultoNavA = document.querySelectorAll('.cabecalho-oculto nav>a');
-    const parteOculta = document.querySelectorAll('.parte-oculta a');
-    const [a8, a9, a10, a11] = parteOculta;
-    const [a6, a7, a5] = cabecalhoOcultoNavA;
+    const [a5, a6, a7, a8] = cabecalhoOcultoNavA;
 
     const cabecalhoOculto = document.querySelector('.cabecalho-oculto');
 
@@ -123,7 +121,7 @@
             return;
         }
 
-        if(el == rodapeA1 || el == rodapeA2 || el == rodapeA3 || el == rodapeA4){
+        if(el == rodapeA1 || el == rodapeA2 || el == rodapeA3 || el == rodapeA4 || el == a3 || el == a7 || el == a4 || el == a8){
             e.preventDefault();
             const href = el.getAttribute('href');
             const to = document.querySelector(href).offsetTop;

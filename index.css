@@ -434,6 +434,59 @@ body{
 
 /* Container - Fim */
 
+/* Container Funcionalidades - Início */
+
+.container-funcionalidades{
+    width: 100%;
+    background: var(--linear-gradient-fundo);
+    border-bottom: 0.2rem solid var(--cor-branco);
+    border-top: 0.2rem solid var(--cor-branco);
+}
+
+.container-funcionalidades>div{
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    color: var(--cor-branco);
+}
+
+.container-funcionalidades h2{
+    font-size: 3rem;
+}
+
+.container-funcionalidades h3{
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.funcionalidades{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.funcionalidade{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    max-width: 50rem;
+    padding: 2rem;
+    background: darkgreen;
+}
+
+/* Container Funcionalidades - Fim */
+
 /* Container Contatos - Início */
 
 .container-contatos{

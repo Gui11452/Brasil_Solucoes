@@ -1,0 +1,98 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    list-style: none;
+}		
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    font-size: 1.5rem;
+    /* background: var(--linear-gradient-fundo); */
+    font-family: var(--fonte-paragrafos) !important;
+}
+
+@font-face{
+    font-family: creo_extrabold;
+    src: url(Creo_ExtraBold.woff)
+}
+
+:root{
+    --cor-branco: #fff;
+    --cor-preto: black;
+    --cor-principal: #7ab317;
+    --cor-verde-secundaria: #00ff00;
+    --cor-secundaria: #1e2326;
+    --cor-terciaria: #f7f7f7;
+    --cor-promocional-um: #FFC600;
+    --cor-promocional-dois: #FFB400;
+    --cor-promocional-tres: #FF4E00;
+    --cor-promocional-quatro: #FF3C00;
+    --linear-gradient-fundo: linear-gradient(90deg, rgba(126,179,23,1) 31%, rgba(26,179,23,1) 71%);
+    /* --fonte-paragrafos: 'Montserrat', sans-serif; */
+    --fonte-paragrafos: creo_extrabold;
+}
+
+.rwb-tooltip{
+    background: var(--cor-branco);
+    font-family: var(--fonte-paragrafos);
+}
+
+#robbu-whatsapp-button{
+    z-index: 100000000;
+}
+
+/* Container - Início */
+
+.container{
+    width: 100%;
+    background: url('images/capa_brasilsolucoes_restaurante.png') center;
+    background-size: cover;
+    position: relative;
+}
+
+.container>div{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-principal);
+}
+
+.home{
+    max-width: 70rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.home a{
+    background: var(--cor-principal);
+    color: darkgreen;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.home a:hover{
+    transform: scale(1.05);
+}
+
+/* Container - Fim */
