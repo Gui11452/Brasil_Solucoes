@@ -438,7 +438,8 @@ body{
 
 .container-funcionalidades{
     width: 100%;
-    background: var(--linear-gradient-fundo);
+    background: url('images/capa4.png');
+    background-size: cover;
     border-bottom: 0.2rem solid var(--cor-branco);
     border-top: 0.2rem solid var(--cor-branco);
 }
@@ -469,9 +470,13 @@ body{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 3rem;
+}
+
+.funcionalidade img{
+    max-width: 4rem;
 }
 
 .funcionalidade{
@@ -480,9 +485,10 @@ body{
     align-items: flex-start;
     flex-flow: column nowrap;
     gap: 1rem;
-    max-width: 50rem;
+    max-width: 30rem;
     padding: 2rem;
     background: darkgreen;
+    box-shadow: 0.2rem 0.2rem 2rem var(--cor-branco);
 }
 
 /* Container Funcionalidades - Fim */

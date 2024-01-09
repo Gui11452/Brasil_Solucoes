@@ -44,14 +44,13 @@
         if(count >= 3){
             count = 0;
         }
-        if(video.currentTime == 0){
+        if(video.currentTime == 0 || video.currentTime == video.duration){
             paginacaoSpan[count].click();
             count+=1;
         }
-    }, 7000);
+    }, 1000);
 
     document.addEventListener('click', e => {
-
         const el = e.target;
 
         if(el == paginacaoSpan2){
@@ -103,7 +102,7 @@
             paginacao3.style.padding = "30rem 0 0 0";
             paginacao3.style.justifyContent = "flex-end";
 
-            if(video.currentTime != 0){
+            if(video.currentTime != 0 && video.currentTime != video.duration){
                 video.play();
             }
         }
