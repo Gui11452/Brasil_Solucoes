@@ -38,6 +38,15 @@
 
     const paginacaoSpan = document.querySelectorAll('.container-home>section>span');
     const [paginacaoSpan1, paginacaoSpan2, paginacaoSpan3] = paginacaoSpan;
+    let count = 0;
+
+    setInterval(function(){
+        if(count >= 3){
+            count = 0;
+        }
+        paginacaoSpan[count].click();
+        count+=1;
+    }, 7000);
 
     document.addEventListener('click', e => {
 
