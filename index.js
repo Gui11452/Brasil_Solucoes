@@ -48,7 +48,7 @@
             paginacaoSpan[count].click();
             count+=1;
         }
-    }, 1000);
+    }, 7000);
 
     document.addEventListener('click', e => {
         const el = e.target;
