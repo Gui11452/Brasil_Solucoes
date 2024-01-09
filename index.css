@@ -424,6 +424,8 @@ body{
     width: 56rem;
     height: 31.5rem;
     margin-right: 5rem;
+    transform: translate(10rem, -5rem);
+    /* border: 0.2rem solid var(--cor-principal); */
 }
 
 .container-home>div>div>div.paginacao2, .container-home>div>div>div.paginacao3{
@@ -714,6 +716,10 @@ header.container-oculto-desocultar{
         flex-flow: row wrap;
         align-content: center;
         width: 100%;
+    }
+
+    .home video{
+        transform: none;
     }
 
     .container-home>div>div>div>img{

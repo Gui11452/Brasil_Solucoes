@@ -66,7 +66,9 @@
             containerHome.style.background = "url('images/capa_brasilsolucoes_mercado.png') center";
             containerHome.style.backgroundSize = "cover";
 
-            video.pause();
+            if(video.currentTime != 0){
+                video.pause();
+            }
 
         }
         else if(el == paginacaoSpan1){
@@ -81,7 +83,9 @@
             containerHome.style.background = "url('images/capa_brasilsolucoes_restaurante.png') center top";
             containerHome.style.backgroundSize = "cover";
 
-            video.pause();
+            if(video.currentTime != 0){
+                video.pause();
+            }
 
         }
         else if(el == paginacaoSpan3){
@@ -99,7 +103,9 @@
             paginacao3.style.padding = "30rem 0 0 0";
             paginacao3.style.justifyContent = "flex-end";
 
-            video.play();
+            if(video.currentTime != 0){
+                video.play();
+            }
         }
 
         if(el == logoAMobile[0] || el == logoImgMobile[0] || el == logoAMobile[1] || el == logoImgMobile[1] 
