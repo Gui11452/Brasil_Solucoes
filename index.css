@@ -396,7 +396,7 @@ body{
 }
 
 .home p span{
-    color: var(--cor-verde-secundaria);
+    color: var(--cor-principal);
     font-weight: bold;
 }
 
@@ -420,7 +420,7 @@ body{
     transform: scale(1.05);
 }
 
-.home iframe{
+.home video{
     width: 56rem;
     height: 31.5rem;
     margin-right: 5rem;
@@ -732,7 +732,7 @@ header.container-oculto-desocultar{
         max-width: 90%;
     }
 
-    .home iframe{
+    .home video{
         width: 100%;
     }
 

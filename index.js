@@ -36,7 +36,7 @@
     const containerHome = document.querySelector('.container-home');
     const containerDivDivDiv = document.querySelector('.container-home>div>div>div');
 
-    const iframe = document.querySelector('iframe');
+    const video = document.querySelector('video');
 
     const paginacaoSpan = document.querySelectorAll('.container-home>section>span');
     const [paginacaoSpan1, paginacaoSpan2, paginacaoSpan3] = paginacaoSpan;
@@ -65,7 +65,8 @@
 
             containerHome.style.background = "url('images/capa_brasilsolucoes_mercado.png') center";
             containerHome.style.backgroundSize = "cover";
-            iframe.click();
+
+            video.pause();
 
         }
         else if(el == paginacaoSpan1){
@@ -79,7 +80,8 @@
 
             containerHome.style.background = "url('images/capa_brasilsolucoes_restaurante.png') center top";
             containerHome.style.backgroundSize = "cover";
-            iframe.click();
+
+            video.pause();
 
         }
         else if(el == paginacaoSpan3){
@@ -96,6 +98,8 @@
 
             paginacao3.style.padding = "30rem 0 0 0";
             paginacao3.style.justifyContent = "flex-end";
+
+            video.play();
         }
 
         if(el == logoAMobile[0] || el == logoImgMobile[0] || el == logoAMobile[1] || el == logoImgMobile[1] 
