@@ -46,8 +46,10 @@
         if(count >= 3){
             count = 0;
         }
-        paginacaoSpan[count].click();
-        count+=1;
+        if(video.currentTime == 0){
+            paginacaoSpan[count].click();
+            count+=1;
+        }
     }, 7000);
 
     document.addEventListener('click', e => {
