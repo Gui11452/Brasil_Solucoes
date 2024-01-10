@@ -36,6 +36,9 @@
 
     const video = document.querySelector('video');
 
+    const botaoSubmit = document.querySelector('.botao-submit');
+    const loader = document.querySelector('.loader');
+
     const paginacaoSpan = document.querySelectorAll('.container-home>section>span');
     const [paginacaoSpan1, paginacaoSpan2, paginacaoSpan3] = paginacaoSpan;
     let count = 0;
@@ -143,6 +146,12 @@
         } else if(el == botaoOculto || el == span4 || el == span5){
             cabecalhoOculto.classList.remove('container-oculto-desocultar');
         }
+    })
+
+    document.addEventListener('submit', e => {
+        const el = e.target;
+        botaoSubmit.style.display = 'none';
+        loader.style.display = 'inline-block';
     })
 
     setInterval(function(){
